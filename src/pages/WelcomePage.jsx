@@ -23,10 +23,10 @@ export const WelcomePage = () => {
         </div>
         
         <h1 className="text-4xl font-bold text-white mb-4 font-serif">
-          Histórias dos Sonhos
+          Contópolis
         </h1>
         <p className="text-purple-200 mb-8 text-lg leading-relaxed">
-          Crie histórias mágicas personalizadas para uma noite de sono tranquila e cheia de sonhos bonitos
+          Crie histórias mágicas para uma noite de sono tranquila e cheia de sonhos bonitos
         </p>
         
         <button
