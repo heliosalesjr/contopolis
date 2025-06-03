@@ -24,7 +24,7 @@ export const WelcomeScreen = ({ savedStoriesCount = 0 }) => {
           
           {/* Title and Description */}
           <h1 className="text-4xl font-bold text-white mb-4 font-serif">
-            Histórias dos Sonhos
+            Contópolis
           </h1>
           <p className="text-purple-200 mb-8 text-lg leading-relaxed">
             Crie histórias mágicas personalizadas para uma noite de sono tranquila e cheia de sonhos bonitos
