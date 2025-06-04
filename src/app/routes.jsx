@@ -6,6 +6,7 @@ import Setting from '../routes/setting';
 import Theme from '../routes/theme';
 import Story from '../routes/story';
 import Library from '../routes/library';
+import { ErrorPage } from '../pages/ErrorPage';
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ export const router = createBrowserRouter([
         path: 'library',
         element: <Library />,
       },
+
+      {
+        path: "*",
+        element: <ErrorPage />,
+      }
     ],
   },
 ]);
