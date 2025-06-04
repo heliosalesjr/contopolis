@@ -1,8 +1,10 @@
 import React from 'react';
+import { Navbar } from '../Navbar';
 
-export const Layout = ({ children, className = '' }) => {
+export const Layout = ({ children, className = '',showNavbar = true }) => {
   return (
     <div className={`min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-blue-900 ${className}`}>
+      {showNavbar && <Navbar />}
       {children}
     </div>
   );
