@@ -7,3 +7,5 @@
 #botão de salvar história sem retorno visual de ação
 
 #animações
+
+#criar as páginas restantes que estão no navbar
