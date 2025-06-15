@@ -7,6 +7,8 @@ import Theme from '../routes/theme';
 import Story from '../routes/story';
 import Library from '../routes/library';
 import { ErrorPage } from '../pages/ErrorPage';
+import About from '../pages/About';      // novo
+import Author from '../pages/Author';    // novo
 
 export const router = createBrowserRouter([
   {
@@ -37,11 +39,18 @@ export const router = createBrowserRouter([
         path: 'library',
         element: <Library />,
       },
-
       {
-        path: "*",
+        path: 'about',
+        element: <About />,         // novo
+      },
+      {
+        path: 'author',
+        element: <Author />,        // novo
+      },
+      {
+        path: '*',
         element: <ErrorPage />,
-      }
+      },
     ],
   },
 ]);
