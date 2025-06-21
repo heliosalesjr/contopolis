@@ -25,13 +25,13 @@ export const Navbar = () => {
           {/* Navigation Links */}
           <div className="flex items-center space-x-6">
             <button
-              onClick={() => navigate('/sobre')}
+              onClick={() => navigate('/about')}
               className="text-purple-200 hover:text-white transition-colors duration-200 font-medium"
             >
               Sobre
             </button>
             <button
-              onClick={() => navigate('/autor')}
+              onClick={() => navigate('/author')}
               className="text-purple-200 hover:text-white transition-colors duration-200 font-medium"
             >
               Autor
