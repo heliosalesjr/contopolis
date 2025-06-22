@@ -4,8 +4,8 @@
 
 #database para tirar as histórias do json?
 
-#botão de salvar história sem retorno visual de ação
+#Resolvido ==> botão de salvar história sem retorno visual de ação
 
 #animações
 
-#criar as páginas restantes que estão no navbar
+#criar as páginas restantes que estão no navbar ==> criadas, agora falta fazer
