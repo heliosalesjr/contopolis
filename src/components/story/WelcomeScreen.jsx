@@ -3,12 +3,18 @@ import { Moon, Star, Sparkles } from 'lucide-react';
 import { Layout, Container } from '../layout/Layout';
 import { Button } from '../ui/Button';
 
-export const WelcomeScreen = ({ savedStoriesCount = 0 }) => {
+export const WelcomeScreen = ({ savedStoriesCount = 0, onNewStory }) => {
   const navigate = useNavigate();
+
+  const handleCreateNewStory = () => {
+    if (onNewStory) {
+      onNewStory(); // Mesma função que funciona no StoryScreen
+    }
+    navigate('/character');
+  };
 
   return (
     <Layout showNavbar={true}>
-      {/* Mova o flex para um container interno, não para o Layout */}
       <div className="flex items-center justify-center min-h-[calc(100vh-4rem)]">
         <Container maxWidth="md">
           <div className="text-center">
@@ -33,7 +39,7 @@ export const WelcomeScreen = ({ savedStoriesCount = 0 }) => {
             
             {/* Main CTA Button */}
             <Button
-              onClick={() => navigate('/character')}
+              onClick={handleCreateNewStory}
               size="large"
               className="mb-4"
             >

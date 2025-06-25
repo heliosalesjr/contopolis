@@ -36,6 +36,16 @@ export const useStoryState = () => {
     setGeneratedStory('');
   };
 
+  // Nova função para reset completo (incluindo limpar do localStorage se necessário)
+  const resetAllSelections = () => {
+    const initialState = { character: '', setting: '', theme: '', mood: '' };
+    setSelectedElements(initialState);
+    setGeneratedStory('');
+    
+    // Opcional: limpar também do localStorage se você estiver salvando as seleções lá
+    // localStorage.removeItem('currentSelections');
+  };
+
   const saveStory = (title) => {
     const newStory = {
       id: Date.now(),
@@ -54,6 +64,7 @@ export const useStoryState = () => {
     updateSelectedElement,
     setGeneratedStory,
     resetStory,
+    resetAllSelections, // Nova função exportada
     saveStory
   };
 };
