@@ -1,13 +1,13 @@
 import React from 'react';
 import { settings } from '../data/storyData';
 import { useStoryStore } from '../stores/storyStore';
-import { useStoryNavigation } from '../hooks/useStoryNavigation';
-import { useStaggeredAnimation } from '../hooks/useAnimations';
+//import { useStoryNavigation } from '../hooks/useStoryNavigation';
+//import { useStaggeredAnimation } from '../hooks/useAnimations';
 
 export const SettingPage = () => {
   const { selectedElements, updateSelection } = useStoryStore();
-  const { goToNextStep, goToPreviousStep, canProceed } = useStoryNavigation();
-  const { isItemVisible } = useStaggeredAnimation(settings, 150);
+  //const { goToNextStep, goToPreviousStep, canProceed } = useStoryNavigation();
+  //const { isItemVisible } = useStaggeredAnimation(settings, 150);
 
   const handleSettingSelect = (settingId) => {
     updateSelection('setting', settingId);
