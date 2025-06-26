@@ -1,4 +1,4 @@
-#limpar o estado dos botões ao criar uma nova história, eles acabam com resíduos da história anterior.
+#limpar o estado dos botões ao criar uma nova história, eles acabam com resíduos da história anterior. ==> FEITO!
 
 #botão de história random?
 
