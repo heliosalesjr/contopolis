@@ -2,7 +2,7 @@ import React from 'react';
 import { Heart, BookOpen, Star, Sparkles, Moon, Users } from 'lucide-react';
 import { Layout } from '../components/layout/Layout';
 
-export const Author = () => {
+export const About = () => {
   return (
     <Layout>
     <div className="min-h-screen bg-gradient-to-b from-indigo-900 via-purple-900 to-blue-900 p-4">
