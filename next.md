@@ -6,8 +6,9 @@
 
 #Resolvido ==> botão de salvar história sem retorno visual de ação
 
-#animações
+#animações ==> feito
 
 #criar as páginas restantes que estão no navbar ==> criadas, agora falta fazer
 
-#colocar a pagina do about com o navbar
+#colocar a pagina do about com o navbar ==> feito!
+
