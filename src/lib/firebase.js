@@ -1,6 +1,6 @@
 // src/lib/firebase.js
 import { initializeApp } from 'firebase/app';
-import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from 'firebase/auth';
+import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { getFirestore, collection, addDoc, getDocs, doc, setDoc, getDoc, query, where, orderBy } from 'firebase/firestore';
 
 // Configuração do Firebase (usando variáveis de ambiente)
@@ -21,12 +21,6 @@ export const googleProvider = new GoogleAuthProvider();
 
 // Funções de Autenticação
 export const signInWithGoogle = () => signInWithPopup(auth, googleProvider);
-
-export const signInWithEmail = (email, password) => 
-  signInWithEmailAndPassword(auth, email, password);
-
-export const signUpWithEmail = (email, password) => 
-  createUserWithEmailAndPassword(auth, email, password);
 
 export const logout = () => signOut(auth);
 
